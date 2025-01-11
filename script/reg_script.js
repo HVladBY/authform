@@ -57,6 +57,10 @@ form.addEventListener('submit', (e) => {
                 'Access-Control-Request-Method': 'POST'
             },
             body: JSON.stringify(regData)
-        }).then(response => response.json()).then(res => console.log(res));
+        }).then(response => response.json()).then((res) => {
+            console.log(res);
+            let message = document.querySelector(".message");
+            message.innerText = res;
+        });
 
 })
