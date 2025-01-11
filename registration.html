@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Самый лучший сайт</title>
+</head>
+<body>
+<h1>Регистрация</h1>
+<h2>Зарегистрируйтесь и будет вам счастье</h2>
+<a href="../authform/index.html">Вернуться на главную</a>
+<br><br>
+<form id="registration_form" action="logic/registration.php" method="POST" class="form-example">
+    <label for="reg_name">Имя:</label>
+    <input type="text" name="reg_name" id="reg_name" required>
+    <br><br>
+    <label for="reg_login">Логин(только из букв нижнего регистра):</label>
+    <input type="text" name="reg_login" id="reg_login" required>
+    <br><br>
+    <label for="reg_password">Пароль(минимум 7 цифр):</label>
+    <input type="text" name="reg_password" id="reg_password" required>
+    <br><br>
+    <input type="submit" name="Войти">
+</form>
+<hr>
+<script src="script/reg_script.js"></script>
+</body>
+</html>
