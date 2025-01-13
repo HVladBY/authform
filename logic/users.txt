@@ -6,3 +6,6 @@ petya|1234567|Петя
 asd|1231222|1231
 
 
+{
+1:{name: Vasya, login: vasya, password: 1234567}
+}
