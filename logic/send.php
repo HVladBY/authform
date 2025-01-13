@@ -1,13 +1,13 @@
 <?php
-$login = $_POST['login'];
-$password = $_POST['password'];
-//print_r($_POST);
+$data = file_get_contents('php://input');
+$data = json_decode($data, true);
+$login = $data['login'];
+$password = $data['password'];
 $usersArray = file("users.txt", FILE_IGNORE_NEW_LINES);
 
 foreach ($usersArray as $value) {
     $user = explode("|", $value);
-    print_r($user);
-
+    //print_r($user);
     if ($user[0] == $login && $user[1] == $password) {
         $userName = $user[2];
         $text = "Здравствуйте, {$userName}! Вы успешно вошли в систему";
@@ -19,5 +19,5 @@ foreach ($usersArray as $value) {
         $text = "Такого пользователя не существует! Пройдите регистрацию.";
     }
 }
-echo "<script>alert(".$text.");</script>";
+echo  json_encode($text);
 
