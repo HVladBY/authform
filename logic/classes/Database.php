@@ -25,10 +25,8 @@ class Database
     }
 
     public static function putToDB($data) {
-        /*var_dump(($data));
-        var_dump(json_encode($data, JSON_FORCE_OBJECT));
-        die();*/
-        var_dump(file_put_contents(Database::$fuleURL, json_encode($data, JSON_FORCE_OBJECT), FILE_APPEND));
+
+        file_put_contents(Database::$fuleURL, json_encode($data, JSON_FORCE_OBJECT), FILE_APPEND);
     }
 
 
