@@ -8,15 +8,10 @@ class User
     private $password;
     private $login;
     private $email;
-    public function toDatabase($ID, $login, $password, $name, $email) {
-        $x = array(
-            "id" => $ID,
-            "login" => $login,
-            "password" => password_hash($password, PASSWORD_DEFAULT),
-            "name" => $name,
-            "email" => $email
-        );
-        Database::saveUser($x);
+    public function addUser() {
+        Database::openConnection();
+        $git
+        Database::putToDB($data);
     }
     public static function setId() {
         $filename = "id.txt";
@@ -37,6 +32,12 @@ class User
         $this->login = $login;
         $this->email = $email;
         $this->id = $ID;
-        $this->toDatabase($ID,$login, $password, $name, $email);
     }
+
+    public function getName() {
+        return $this->name;
+    }
+    /// - достать пользователя по id
+    /// - удалить пользователя по id
+    /// - изменить пользователя по id
 }

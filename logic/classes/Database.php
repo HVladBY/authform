@@ -1,26 +1,35 @@
 <?php
+
 namespace classes;
 require_once("User.php");
+
 class Database
 {
-    private $fuleURL = "database.json";
+    private static $fuleURL = "database.json";
+
     ///прочитать про синглтон и реализовать логику:
     /// - подключения к бд
-    private function openConnection ()
-{
-    $openFile = fopen($this->fuleURL, "a+");
-}
-    private function closeConnection () {
-        fclose($openFile);
+    /**
+     * @var false|resource
+     */
+    private static $openFile;
+
+    public static function openConnection()
+    {
+        static::$openFile = fopen(static::$fuleURL, "a+");
     }
 
-    /// - сохранения пользователя (USER)
-    public static function saveUser($user) {
-    $string = json_encode($user, JSON_UNESCAPED_UNICODE);
-    file_put_contents("database.json","{$string}\n" , FILE_APPEND);
+    private function closeConnection()
+    {
+        fclose(static::$openFile);
     }
-    /// - достать пользователя по id
-    /// - удалить пользователя по id
-    /// - изменить пользователя по id
+
+    public static function putToDB($data) {
+        /*var_dump(($data));
+        var_dump(json_encode($data, JSON_FORCE_OBJECT));
+        die();*/
+        var_dump(file_put_contents(Database::$fuleURL, json_encode($data, JSON_FORCE_OBJECT), FILE_APPEND));
+    }
+
 
 }

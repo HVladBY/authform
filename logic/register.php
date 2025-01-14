@@ -8,7 +8,7 @@ require_once ('classes/User.php');
 
 $data = file_get_contents('php://input');
 $data = json_decode($data, true);
-
+$data["email"] = 'assd@mail.ru';
 $regID = User::setId();
 $regLogin = $data["login"];
 $regPass = $data["password"];
@@ -21,6 +21,7 @@ if (Validate::validateLogin($regLogin) && Validate::validatePassword($regPass) &
         file_put_contents("users.txt","{$newUser}\n" , FILE_APPEND);*/
 
 $newUser = new User($regID, $regLogin, $regPass, $regName, $regEmail);
+$newUser->addUser();
 
         $res = "Поздравляю! Вы успешно зарегистрировались";
 } else {
