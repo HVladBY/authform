@@ -4,22 +4,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Самый лучший сайт</title>
+    <link rel="stylesheet" href="dist/css/splide.min.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-<h1>Добро пожаловать на самый лучший сайт!</h1>
-<h2>Войдите в систему и будьте как дома!</h2>
-<form id="form" class="form-example">
-    <label for="login">Логин:</label>
-    <input type="text" name="login" id="login" required>
-    <br><br>
-    <label for="password">Пароль:</label>
-    <input type="text" name="password" id="password" required>
-    <br><br>
-    <input type="submit" name="Войти">
-</form>
-<div class="message"></div>
-<hr>
-<script src="script/script.js"></script>
-<a href="registration.html">Зарегистрироваться</a>
+    <div class="container">
+            <div class="welcome">
+                <h1>Добро пожаловать на самый лучший сайт!</h1>
+                <h2>Войдите в систему и будьте как дома!</h2>
+            </div>
+            <div class="form">
+                <div class="img">
+                    <img src="img/door_close.jpg" class="image" style ="border-radius: 15px;" height="150px" alt="">
+                </div>
+                <div class="inputs">
+                    <form id="form" class="form-example">
+                        <div class="login">
+                            <label for="login">Логин</label>
+                            <input class="lp" type="text" name="login" id="login" required>
+                        </div>
+                        <div class="password">
+                            <label  for="password">Пароль</label>
+                            <input class="lp" type="text" name="password" id="password" required>
+                        </div>
+                            <div class="register">
+                                <input type="submit" class="btn" value="Войти">
+                                <a href="registration.html">Зарегистрироваться</a>
+                                <div class="message"></div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+    <script src="script/script.js"></script>
 </body>
 </html>

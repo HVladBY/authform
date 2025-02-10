@@ -4,21 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Самый лучший сайт</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 <h1>Регистрация</h1>
 <h2>Зарегистрируйтесь и будет вам счастье</h2>
-<a href="../authform/index.html">Вернуться на главную</a>
+<a href="index.html">Вернуться на главную</a>
 <br><br>
 <form id="registration_form" class="form-example">
     <label for="reg_name">Имя:</label>
-    <input type="text" name="reg_name" id="reg_name" required>
+    <input type="text" name="reg_name" id="reg_name">
+    <br><br>
+    <label for="reg_email">E-mail:</label>
+    <input type="text" name="reg_email" id="reg_email">
     <br><br>
     <label for="reg_login">Логин(только из букв нижнего регистра):</label>
-    <input type="text" name="reg_login" id="reg_login" required>
+    <input type="text" name="reg_login" id="reg_login">
     <br><br>
     <label for="reg_password">Пароль(минимум 7 цифр):</label>
-    <input type="text" name="reg_password" id="reg_password" required>
+    <input type="text" name="reg_password" id="reg_password">
     <br><br>
     <input type="submit" name="Войти">
 </form>

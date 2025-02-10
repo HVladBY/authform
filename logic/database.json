@@ -1,3 +1,9 @@
-{'1':{,"login":"flloiu","password":"$2y$10$90ZMn8Qx8CoczzFGkNEykuu4eNGUL8yt8FEQt5lcc.Dqcu3XXUT6.","name":"Владддд","email":"s@w.tu"}}
-{"id":"2","login":"flloiu","password":"$2y$10$mq5aHGTH9nNQNyxFt23Zr.mt\/47rqT0CqrOW1nj193VAQmeLEq0GG","name":"Владддд","email":"s@w.tu"}
-{"id":"3","login":"flloiu","password":"$2y$10$F1e1fSuTM2BnvaykSq0lMusHEZw90WSgfNodOvydC\/nShyW6vjlTO","name":"Владддд","email":"s@w.tu"}{"id":"24","name":"\u0444\u044b\u0432\u0444\u044b\u0432","password":"1234567","login":"asd","email":"assd@mail.ru"}
+{"ID":1,"name":"Влад","e-mail":"vvzaytsev1992@gmail.com","login":"vlad","password":"$2y$10$WV4DuqqkuMc1r2tRt9V.0OvL61nt8vdFePNouqBl0aQH9QWXy5w7K"}
+{"ID":2,"name":"Вася","e-mail":"vasya@mail.ru","login":"vasya","password":"$2y$10$r27VQszTwX6vtTpM7hlcG.bX93l7aj6rDvR9t3EUHL6D43rZ.PvNG"}
+{"ID":3,"name":"Петя","e-mail":"petya@gmail.com","login":"petya","password":"$2y$10$e\/mGHnGCqYxfrg0BrKBNme\/CyaMNXrWNYXIxRBktisd6kN\/pZpYr2"}
+{"ID":4,"name":"Вова","e-mail":"vova@gmail.com","login":"vova","password":"$2y$10$i5OBe0HZhPsmlbrXAFAoPu6T5JHeq.7objBND15zSiBzg3Yf30zge"}
+{"ID":5,"name":"Инна","e-mail":"inna@gmail.com","login":"inna","password":"$2y$10$1cTJ8cz9dY9rY3lGnM8zT.kyiipgSSjEO4LG5ClxpkJdPMf2MbiDm"}
+{"ID":6,"name":"Ирина","e-mail":"irara@gmail.com","login":"ira","password":"$2y$10$eOBJAIbsvUjdFp9d6liCtOgJVEyAU\/\/FYWVC4hKQ1J19Iz\/m4KOe6"}
+{"ID":7,"name":"Валик","e-mail":"valik@gmail.com","login":"valik","password":"$2y$10$9KeASclDzttKnIrt981Wlegvv9wMns4IYZyfKqYJKfkI0fgm0Ftoi"}
+{"ID":8,"name":"Анжелика","e-mail":"ang@f.com","login":"angela","password":"$2y$10$\/JX\/qDYqPRje3TL22DTnL.6fBgc7XnhOYrf8AWxfYeruNkjIpe.VG"}
+{"ID":9,"name":"Саша","e-mail":"sasha@gmail.com","login":"sasha","password":"$2y$10$KKFseD6f6xi7XuhyMgsVjejcsU8YDuhXkW9kzdu6OOpvWD6Tk9T1."}

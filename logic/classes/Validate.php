@@ -4,11 +4,10 @@ namespace classes;
 //дописать и заюзать валидации
 class Validate
 {
+
     public static function validateEmail($email) :bool
     {
-        if (filter_var($email, FILTER_VALIDATE_EMAIL) != $email) return false;
-
-        return trim($email) == $email;
+        return filter_var(trim($email), FILTER_VALIDATE_EMAIL);
     }
     public static function validatePassword($password) :bool
     {

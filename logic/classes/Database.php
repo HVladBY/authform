@@ -5,29 +5,34 @@ require_once("User.php");
 
 class Database
 {
-    private static $fuleURL = "database.json";
+    private static string $fileURL = "database.json";
 
     ///прочитать про синглтон и реализовать логику:
     /// - подключения к бд
-    /**
-     * @var false|resource
-     */
-    private static $openFile;
-
-    public static function openConnection()
+    public static function getFileURL(): string
     {
-        static::$openFile = fopen(static::$fuleURL, "a+");
+        return self::$fileURL;
     }
-
-    private function closeConnection()
+    public static function openConnectionPutToDB()
     {
-        fclose(static::$openFile);
+        return fopen(static::getFileURL(), "a");
     }
-
-    public static function putToDB($data) {
-
-        file_put_contents(Database::$fuleURL, json_encode($data, JSON_FORCE_OBJECT), FILE_APPEND);
+    public static function writeToDB($data): void
+    {
+        fwrite(self::openConnectionPutToDB(), $data);
     }
-
-
+    public static function closeConnectionPutToDB(): void
+    {
+        fclose(self::openConnectionPutToDB());
+    }
+    public static function putToDB($data): void
+    {
+        $userData = ['ID'=>$data['id'],'name'=>$data['name'],'e-mail'=>$data['email'], 'login'=>$data['login'], 'password'=>$data['password']];
+        $string = json_encode($userData, JSON_UNESCAPED_UNICODE);
+        self::openConnectionPutToDB();
+        self::writeToDB("$string\n");
+        self::closeConnectionPutToDB();
+    }
+    protected function __construct() { }
+    protected function __clone() { }
 }

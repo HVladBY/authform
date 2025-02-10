@@ -1,9 +1,0 @@
-vasya|1234567|Вася
-petya|1234567|Петя
-vasyА|1234567|Вася
-petya|1234567|Петя
-petya|1234567|Петя
-asd|1231222|1231
-Петя|peter|1234567|petya@gmail.com
-Влад|vlaaad|1234567|vlad@mail.ru
-Влад|vlvlvlvlvlvlvlvlad|1234567|vlad@gmail.com

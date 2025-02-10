@@ -1,0 +1,99 @@
+.splide__pagination__page {
+    background: #ccc;
+    border-radius: 0;
+    height: 2px;
+    margin: 0 .25rem 0 0 !important;
+    transition: .2s;
+    width: 4px;
+
+}
+.splide__pagination__page.is-active {
+    background: #00b9bf;
+    width: 16px;
+    transform: scale(1);
+}
+.splide__pagination {
+    justify-content: end;
+    height: 2px;
+}
+ul.custom-pagination__list {
+display: flex;
+list-style-type: none;
+justify-content: end;
+height: 2px;
+}
+div.custom-pagination {
+    width:450px;
+}
+.custom-pagination__button {
+    opacity: 0;
+}
+.custom-pagination__item {
+    background: #ccc;
+    border-radius: 0;
+    height: 2px;
+    margin: 0 .25rem 0 0 !important;
+    transition: .2s;
+    width: 4px;
+}
+.custom-pagination__item.is-active {
+    background: #00b9bf;
+    width: 16px;
+    transform: scale(1);
+}
+
+
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color:rgb(238, 234, 232);*/
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container {
+    max-width: 75%;
+    margin: auto;
+    display: flex;
+}
+.welcome {
+    text-align: center;
+    margin-right: 20px;
+}
+.welcome h2 {
+    margin-bottom: 10;
+}
+.form {
+    display: flex;
+}
+.inputs {
+   margin-left: 20px; 
+}
+.inputs div {
+    margin-bottom: 30px;
+}
+.form-example {
+    display: block;
+}
+.form-example label, .form-example input {
+    margin-right: 20px;
+}
+.lp{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid gray;
+}
+.bg-yellow {
+    background: #fff9dc;
+}
+.bg-green {
+    background: #e5ffe7;
+}
+.bg-red {
+    background: #ffe5e5;
+}
+@media (max-width :700px) {
+    .form-example {
+        display: block;
+    }
+
+}
